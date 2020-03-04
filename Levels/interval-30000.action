@@ -1,0 +1,31 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": false,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "blacklist",
+    "roles": [],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "interval",
+    "content": "30000"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{set;aperson;{user.username;{user.random}}}\n{set;adminrole;661573648364339248}\n{set;x;{user.level;{get;aperson}}}\n{if;{user.roles;{get;aperson}};includes;{get;adminrole};{if;{get;x};==;1;{user.addrole;683578264337383552;{get;aperson}};{user.removerole;683578264337383552;{get;aperson}}}}\n{if;{user.roles;{get;aperson}};includes;{get;adminrole};{if;{get;x};==;2;{user.addrole;683578261455765514;{get;aperson}};{user.removerole;683578261455765514;{get;aperson}}}}\n{if;{user.roles;{get;aperson}};includes;{get;adminrole};{if;{get;x};==;3;{user.addrole;683578259451281461;{get;aperson}};{user.removerole;683578259451281461;{get;aperson}}}}\n{if;{user.roles;{get;aperson}};includes;{get;adminrole};{if;{get;x};==;4;{user.addrole;683578257748000769;{get;aperson}};{user.removerole;683578257748000769;{get;aperson}}}}\n{if;{user.roles;{get;aperson}};includes;{get;adminrole};{if;{get;x};==;5;{user.addrole;683578256213147894;{get;aperson}};{user.removerole;683578256213147894;{get;aperson}}}}\n{if;{user.roles;{get;aperson}};includes;{get;adminrole};{if;{get;x};==;6;{user.addrole;683578253969063987;{get;aperson}};{user.removerole;683578253969063987;{get;aperson}}}}\n{if;{user.roles;{get;aperson}};includes;{get;adminrole};{if;{get;x};==;7;{user.addrole;683578252379684884;{get;aperson}};{user.removerole;683578252379684884;{get;aperson}}}}\n{if;{user.roles;{get;aperson}};includes;{get;adminrole};{if;{get;x};==;8;{user.addrole;683578250399973408;{get;aperson}};{user.removerole;683578250399973408;{get;aperson}}}}\n{if;{user.roles;{get;aperson}};includes;{get;adminrole};{if;{get;x};==;9;{user.addrole;683578248998682627;{get;aperson}};{user.removerole;683578248998682627;{get;aperson}}}}\n{user.send;{get;x}{get;aperson}Admin interval ran.}",
+      "channel": "680416953764282381",
+      "id": "5e5e78c236c899002efe3586"
+    }
+  ],
+  "formatVersion": "1.2"
+}
